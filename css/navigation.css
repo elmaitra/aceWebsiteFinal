@@ -1,0 +1,208 @@
+/*Assignment Name: CAS 222 Template for Ace Website
+File Name: navigation.css
+Date: 05/03/2018
+Programmer: Ellorashree Maitra
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+.logo {
+  color: rgb(255, 0, 0);
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 5px;
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  letter-spacing: 1px;
+  height: 50px;
+  background-color:#D3D3D3; /*#0A030B;*/
+}
+
+.menu-toggle {
+  position: absolute;
+  padding: .6em;
+  top: 1em;
+  right: .5em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #0A030B; /*rgb(244, 243, 242);*/
+  height: 3px;
+  width: 2em;
+  border-radius: 3px;
+  -webkit-transition: all ease-in-out 350ms;
+  transition: all ease-in-out 350ms;
+}
+
+.hamburger::before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.open .hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  display: none;
+}
+
+.open .hamburger::after {
+  -webkit-transform: translateY(-1px) rotate(-90deg);
+          transform: translateY(-1px) rotate(-90deg);
+}
+
+/*.site-nav--open {
+  -webkit-clip-path: circle(150% at top right);
+          clip-path: circle(150% at top right);
+}
+*/
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #D3D3D3; /*#D3D3D3;#0A030B;*/
+    font-family: "Abril Fatface", cursive;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: relative;
+    z-index:2;
+}
+
+nav ul.opening {
+    display: block;
+    height: 30px;
+}
+
+nav li {
+  border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+/*nav li:last-child {
+  border-bottom: none;
+}*/
+
+nav a {
+  color: rgb(244, 243, 242);
+  background: #333;
+  display: block;
+  padding: 1.5em 4em 1.5em 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+  background: rgb(255, 0, 0);
+  color: #0A030B;
+}
+
+/*.site-nav--icon {
+  font-size: 1.4em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,.4);
+}
+
+/* flex styles */
+
+
+/*
+nav {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #e7a119;
+  -webkit-clip-path: circle(0px at top left);
+          clip-path: circle(0px at top left);
+  -webkit-transition: -webkit-clip-path ease-in-out 700ms;
+  transition: -webkit-clip-path ease-in-out 700ms;
+  transition: clip-path ease-in-out 700ms;
+  transition: clip-path ease-in-out 700ms, -webkit-clip-path ease-in-out 700ms;
+  text-align: left;
+}
+*/
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+  .menu-toggle, .hamburger {
+    display: none;
+  }  
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav li {
+     flex: 0 0 auto;
+     border-left: 1px solid rgb(255, 0, 0);
+ }
+
+   nav li a {
+       padding: 1.5em 1.3em 1.5em 1.3em;
+       margin: 0;
+    }
+    
+    .logo {
+        flex: 0 0 auto;
+        flex-wrap: nowrap;
+        margin: 0;
+        padding-left: 5px;
+        font-size: 1.5rem;
+    }
+    
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+    }
+    
+    nav a:hover,
+    nav a:focus {
+  background: rgb(255, 0, 0);
+  color: #0A030B;
+}
+     
+  /*.site-nav--icon {
+    display: none;
+  }
+
+}

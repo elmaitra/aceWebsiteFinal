@@ -1,0 +1,87 @@
+/*Assignment Name: CAS 222 Ace Website Table Stylesheet
+File Name: table.css
+Date: 05/31/2018
+Programmer: Ellorashree Maitra
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+table {
+     border: 2px solid rgb(255, 0, 0); 
+     padding-bottom: 50px; 
+     width: 200px;
+}
+
+td {
+     background-color: #ffffff; 
+     border: 1px solid rgb(255, 0, 0); 
+     color: #0A030B; 
+     font-weight: bold; 
+     font-family: "Open Sans", sans-serif; 
+     font-size: .80em; 
+     padding: .5em; 
+     text-align: center; 
+}
+
+th {
+     background-color: rgb(255, 0, 0); 
+     color: #ffffff; 
+     font-size: 1em;
+     font-weight: bold; 
+     font-family: "Abril Fatface", cursive; 
+     padding: .5em; 
+     text-align: center; 
+}
+
+
+/* TABLET & LARGER PHONE STYLES*/
+
+@media only screen and (min-width: 480px) {
+    
+    table {
+        margin: auto;
+        width: 380px;
+    }
+    
+    td {
+        font-size:.85em;
+    }
+    
+    th {
+        font-size: 1em;
+    }
+    
+    
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    table {
+        margin: auto;
+        width: 600px;
+    }
+    
+    td {
+        font-size:.95em;
+    }
+    
+    th {
+        font-size: 1.15em;
+    }
+}
+
+ /*#caption {
+     color: #363636; 
+     font-family: "Abril Fatface", cursive;
+     font-size: 1.5em; 
+     padding-top: 30px; 
+     padding-bottom: 30px; 
+     text-align: center; 
+}*/

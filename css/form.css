@@ -1,0 +1,72 @@
+/*Assignment Name: CAS 222 Ace Website Forms Stylesheet
+File Name: form.css
+Date: 05/03/2018
+Programmer: Ellorashree Maitra
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+form {
+     background-image: url(../images/graywall.jpg);
+     border: 2px solid rgb(255, 0, 0);
+     font-family: "Open Sans", sans-serif;
+     padding: 10px; 
+     padding-top: 35px; 
+}
+
+
+input, textarea {
+     display: block; 
+     margin-bottom: 2em; 
+}
+
+label {
+     clear: left; 
+     float: left; 
+     font-size: .75em;
+     font-weight: bold;
+     margin-bottom: 1em; 
+     padding-right: 10px; 
+     text-align: right; 
+     width: 150px; 
+}
+select {
+     display: block; 
+     margin-bottom: 2em; 
+}
+
+ #myQuestion {
+    width: 200px;
+    height:100px;
+}
+
+
+#honeypot {
+     display: none;
+}
+
+#mysubmit {
+     margin-left: 200px; 
+}
+
+#signup {
+     margin-left: auto; 
+     margin-right: auto;  
+     padding-bottom: 25px; 
+     width: 100px; 
+}
+
+#source {
+     font-size: .10em; 
+     text-align: right; 
+}
+
+
+
+
+  
